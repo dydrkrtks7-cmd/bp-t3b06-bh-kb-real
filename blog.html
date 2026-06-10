@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방화 노래방 블로그 | 내돈내산 찐리뷰 & 꿀팁</title>
+    <meta name="description" content="방화동 노래방 내돈내산 블로그. 방화 노래방 1티어 찐리뷰, 가성비 꿀팁, 시설 비교, 24시 코인노래방 실사용 후기까지. 형아들이 인증하는 진짜 정보.">
+    <meta name="keywords" content="방화 노래방 블로그, 방화동 노래방 내돈내산, 방화 노래방 리뷰, 방화 노래방 추천, 방화 가성비 노래방, 방화 24시 노래방, 방화 코인노래방 후기, 방화 주점 노래방">
+    <meta name="author" content="방화 노래방 내돈내산 블로그">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b06-bh-k-blog.vercel.app/">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <!-- OG -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="방화 노래방 블로그 | 내돈내산 찐리뷰">
+    <meta property="og:description" content="방화동 노래방 1티어, 가성비+시설 개쩜. 24시 운영, 예약은 010-6279-0862. 블로그에서 찐리뷰 확인하셈.">
+    <meta property="og:image" content="https://t3b06-bh-k-blog.vercel.app/og-image.jpg">
+    <meta property="og:url" content="https://t3b06-bh-k-blog.vercel.app/">
+    <meta property="og:locale" content="ko_KR">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="방화 노래방 블로그 | 내돈내산 찐리뷰">
+    <meta name="twitter:description" content="방화동 노래방 1티어, 가성비+시설 개쩜. 블로그에서 찐리뷰 확인하셈.">
+    <meta name="twitter:image" content="https://t3b06-bh-k-blog.vercel.app/twitter-image.jpg">
+    <style>
+        /* RESET + BASE */
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        html { font-size:100%; scroll-behavior:smooth; }
+        body {
+            font-family:'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;
+            background:#f5f0eb; /* raw concrete vibe */
+            color:#1a1a1a;
+            line-height:1.6;
+            -webkit-font-smoothing:antialiased;
+        }
+
+        /* FULL BLEED */
+        .container {
+            max-width:1200px;
+            margin:0 auto;
+            padding:0 20px;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 { font-weight:900; letter-spacing:-0.02em; }
+        h1 { font-size:clamp(2rem, 5vw, 3.5rem); line-height:1.1; }
+        h2 { font-size:clamp(1.5rem, 3.5vw, 2.5rem); margin-bottom:1rem; }
+        h3 { font-size:clamp(1.2rem, 2.5vw, 1.8rem); margin-bottom:0.6rem; }
+        p, li, blockquote { font-size:1.05rem; max-width:70ch; }
+        a { color:#c0392b; text-decoration:underline; text-underline-offset:3px; font-weight:700; }
+        a:hover { color:#000; background:#f1c40f; text-decoration:none; }
+
+        /* SPACING */
+        section { padding:4rem 0; }
+        .section-gap { height:2rem; }
+
+        /* GRID + AS */
+        .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+        .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+        @media (max-width:768px) { .grid-2, .grid-3 { grid-template-columns:1fr; } }
+
+        .card {
+            background:#fff;
+            border:3px solid #1a1a1a;
+            padding:1.5rem;
+            box-shadow:6px 6px 0 rgba(0,0,0,0.15);
+            transition:all 0.15s ease;
+        }
+        .card:hover { transform:translate(-2px,-2px); box-shadow:10px 10px 0 rgba(0,0,0,0.2); }
+
+        .badge {
+            display:inline-block;
+            background:#1a1a1a;
+            color:#fff;
+            font-weight:900;
+            font-size:0.75rem;
+            padding:0.2em 0.6em;
+            letter-spacing:0.05em;
+            text-transform:uppercase;
+        }
+
+        .hr-blood { border:none; height:4px; background:#c0392b; margin:3rem 0; }
+
+        /* NAV */
+        nav {
+            position:sticky;
+            top:0;
+            z-index:1000;
+            background:#1a1a1a;
+            padding:0.8rem 1.5rem;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            border-bottom:4px solid #c0392b;
+        }
+        nav .logo { color:#fff; font-size:1.3rem; font-weight:900; text-decoration:none; letter-spacing:-0.03em; }
+        nav .logo:hover { background:transparent; color:#f1c40f; }
+        nav .nav-links { display:flex; gap:2rem; }
+        nav .nav-links a { color:#f5f0eb; text-decoration:none; font-weight:700; font-size:0.95rem; }
+        nav .nav-links a:hover { color:#f1c40f; background:transparent; text-decoration:underline; }
+        .hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; background:transparent; border:none; }
+        .hamburger span { width:28px; height:3px; background:#fff; border-radius:2px; transition:0.3s; }
+        @media (max-width:768px) {
+            .hamburger { display:flex; }
+            .nav-links { display:none; position:absolute; top:100%; left:0; width:100%; background:#1a1a1a; flex-direction:column; padding:1rem 1.5rem; border-bottom:4px solid #c0392b; }
+            .nav-links.open { display:flex; }
+            .nav-links a { padding:0.5rem 0; }
+        }
+
+        /* TEL LINK */
+        .tel-link { font-size:1.4rem; font-weight:900; display:inline-block; background:#f1c40f; color:#1a1a1a; padding:0.3rem 1rem; text-decoration:none; border:2px solid #1a1a1a; }
+        .tel-link:hover { background:#c0392b; color:#fff; }
+
+        /* blog specific */
+        .blog-header { border-left:6px solid #c0392b; padding-left:1.5rem; margin-bottom:2rem; }
+        .blog-meta { font-size:0.9rem; color:#555; margin-top:0.5rem; display:flex; gap:1.5rem; align-items:center; }
+        .blog-body p { margin-bottom:1.5rem; }
+        .blog-body blockquote { border-left:4px solid #1a1a1a; padding-left:1.5rem; font-style:italic; background:#e8e3de; padding:1rem 1.5rem; margin:1.5rem 0; }
+        .blog-body ul { margin:1rem 0 1.5rem 1.5rem; }
+        .blog-body li { margin-bottom:0.5rem; max-width:70ch; }
+        .blog-card { margin-bottom:2rem; }
+
+        /* footer */
+        footer { background:#1a1a1a; color:#f5f0eb; padding:2rem 0; text-align:center; border-top:4px solid #c0392b; }
+        footer a { color:#f1c40f; }
+        footer a:hover { color:#fff; background:transparent; }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="logo">방화 노래방</a>
+        <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">홈</a>
+            <a href="about.html">소개</a>
+            <a href="blog.html">블로그</a>
+            <a href="review.html">리뷰</a>
+            <a href="pricing.html">가격</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">문의</a>
+        </div>
+    </nav>
+
+    <!-- BLOG POST -->
+    <section>
+        <div class="container">
+            <div class="blog-header">
+                <span class="badge">내돈내산 찐리뷰</span>
+                <h1 style="margin-top:0.5rem;">방화 노래방 1티어는 여기다 — 진짜 써본 형이 말한다</h1>
+                <div class="blog-meta">
+                    <span>✍️ 방화 노래방 내돈내산</span>
+                    <span>📅 2025. 3. 14.</span>
+                    <span>⏱ 6분 읽기</span>
+                </div>
+            </div>
+
+            <div class="blog-body">
+                <p>야. 방화에서 노래방 찾고 있냐? 인터넷에 검색하면 후기 조작, 광고 떡칠, 아무거나 추천글 개많다. 근데 형은 직접 돈 내고 10번 넘게 간 곳만 추천한다. <strong>내돈내산 인증</strong> — 영수증도 다 갖고 있다. 걱정하지 마라.</p>
+
+                <p>결론부터 말한다. <strong>방화동에서 가장 쩌는 노래방 = [방화 노래방 내돈내산 추천]</strong> (예약번호: 010-6279-0862). 이유를 세 줄로 정리한다.</p>
+
+                <ul>
+                    <li><strong>가성비:</strong> 1시간에 만원대. 코인노래방보다 싸다. 심야엔 더 개이득.</li>
+                    <li><strong>시설:</strong> 마이크 3개, 우퍼 터지는 스피커, 조명 200% 만족. 방음도 찐이다.</li>
+                    <li><strong>24시 운영:</strong> 새벽 3시에 술 깨고 가도 됨. 예약하면 바로 입장.</li>
+                </ul>
+
+                <p>근데 형아가 말하는 진짜 중요 포인트는 따로 있다. <strong>사장님 센스.</strong> 다른 데는 기계 던져주고 끝이잖아? 여기는 음량 밸런스, 리버브 세팅까지 맞춰준다. 내가 가수 된 기분임. "형 여기 마이크 소리 왜 이렇게 좋냐" 물어보니까 직접 조정해준다고 하더라. 이런 집이 1티어지.</p>
+
+                <blockquote>
+                    "방화 노래방 갈 바에 그냥 집에서 노래부르지" — 이 말 한 번이라도 한 놈은 꼭 여기 와봐라. 생각이 바뀐다. 직접 체험해보고 다시 얘기하자.
+                </blockquote>
+
+                <p>자, 이제 <strong>가격을 까발린다.</strong> (2025년 3월 기준, 변동 가능)<br>
+                • 1시간 노래방: 15,000원 (코인보다 싸지?)<br>
+                • 2시간 패키지: 25,000원 (여기서 많이 함)<br>
+                • 심야(23시 이후) 2시간: 20,000원<br>
+                • 주류/안주 따로 판매, 바가격보다 쌈 (맥주 4,000원, 소주 4,000원)</p>
+
+                <p>솔직히 말해서, 방화동에 노래방 6곳 돌아다녀봤다. 여기가 제일 깔끔하고 시설 좋았다. 다른 데는 마이크에서 침냄새 나고, 리모컨 작동 안 되고, 천장에 곰팡이 피고... 생각만 해도 토 나온다. 여기는 매일 청소한다고 사장님이 직접 말해줌. 실제로 화장실도 깨끗하고 바닥에 끈적임 없음.</p>
+
+                <p><strong>내돈내산 인증 팁</strong> 하나 준다. 예약할 때 "형아가 보내서 왔습니다"라고 말해라. 사장님 기분 좋아서 서비스 하나 더 준다. (진짜다, 내가 두 번 받음)</p>
+
+                <h2>자주 묻는 뻘질문 — 형이 직접 답한다</h2>
+
+                <div class="blog-card card">
+                    <h3>❓ 코인노래방 vs 여기, 뭐가 더 나음?</h3>
+                    <p>걍 여기 와라. 코인노래방 15분에 1,000~2,000원인데, 여기 1시간에 만오천원이다. 시설, 음질, 청결도 차이가 하늘과 땅. 코인 갈 시간에 여기 와서 30분만 불러도 훨씬 낫다.</p>
+                </div>
+
+                <div class="blog-card card">
+                    <h3>❓ 혼자 가도 되나요?</h3>
+                    <p>당연히 된다. 혼코노(혼자 코인노래방) 하는 시대에 혼자 일반 노래방 가는 거 부끄러울 거 없다. 오히려 방 하나 통째로 쓰니까 더 좋음. 나도 가끔 혼자 가서 스트레스 푼다.</p>
+                </div>
+
+                <div class="blog-card card">
+                    <h3>❓ 예약 꼭 해야됨?</h3>
+                    <p>주말이나 저녁 시간대는 무조건 예약해라. 전화 한 통이면 끝 (010-6279-0862). 안 하면 30분 기다릴 수도 있음. 평일 낮은 걍 워크인 가능.</p>
+                </div>
+
+                <div class="blog-card card">
+                    <h3>❓ 노래방에서 술 마셔도 되나요?</h3>
+                    <p>가능. 주류 판매하고, 안주도 있다. 근데 너
+</body>
+</html>
